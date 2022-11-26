@@ -1,0 +1,47 @@
+{
+  "name": "latex-snippets-ext",
+  "displayName": "LaTeX Snippets EXT",
+  "description": "A simple LaTeX snippet extension",
+  "version": "1.0.0",
+  "publisher": "aknierim",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aknierim/vscode-latex-snippets-ext.git"
+  },
+  "icon": "icon.png",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.73.1"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "latex",
+        "path": "./snippets/preambles_headers_classes.cson"
+      },
+      {
+        "language": "latex",
+        "path": "./snippets/document_structure.cson"
+      },
+      {
+        "language": "latex",
+        "path": "./snippets/environments.cson"
+      },
+      {
+        "language": "latex",
+        "path": "./snippets/math.cson"
+      },
+      {
+        "language": "latex",
+        "path": "./snippets/tikz.cson"
+      },
+      {
+        "language": "latex",
+        "path": "./snippets/other.cson"
+      }
+    ]
+  }
+}

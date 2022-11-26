@@ -1,0 +1,42 @@
+{
+    # TikZ
+    "TikZ Picture": {
+        "prefix": "tikzpicture",
+        "body": [
+            "\\begin{tikzpicture}",
+            "\t$0",
+            "\\end{tikzpicture}"
+        ],
+        "description": "TikZ Picture"
+    },
+    "TikZ Scope": {
+        "prefix": "scope",
+        "body": [
+            "\\begin{scope}[${1:options}]",
+            "\t$0",
+            "\\end{scope}"
+        ],
+        "description": "TikZ Scope"
+    },
+    "TikZ Coordinate": {
+        "prefix": "coordinate",
+        "body": [
+            "\\coordinate (${1:coordinate}) at (${2:coordinate});"
+        ],
+        "description": "TikZ Coordinate"
+    },
+    "TikZ Draw": {
+        "prefix": "draw",
+        "body": [
+            "\\draw [${1:options}] (${2:coordinate}) -- (${3:coordinate});"
+        ],
+        "description": "TikZ Draw"
+    },
+    "TikZ Node": {
+        "prefix": "node",
+        "body": [
+            "\\node [${1:options}] at (${2:coordinate}) {$3};"
+        ],
+        "description": "TikZ Node"
+    }
+}

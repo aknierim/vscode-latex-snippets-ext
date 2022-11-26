@@ -1,0 +1,112 @@
+{
+    # inline math
+    "Inline Math \\(\\)": {
+        "prefix": ["inline"],
+        "body": [
+            "\\($1\\)$0"
+        ],
+        "description": "Inline Math"
+    },
+    "Display Math \\[\\]": {
+        "prefix": ["displaymath"],
+        "body": [
+            "\\[$1\\]$0"
+        ],
+        "description": "Display Math"
+    },
+
+    # math font settings
+    "math italic": {
+        "prefix": ["\\mathit", "mathit", "it"],
+        "body": [
+            "\\mathit{$1}$0"
+        ],
+        "description": "math italic"
+    },
+    "math boldface": {
+        "prefix": ["\\mathbf", "mathbf", "bf"],
+        "body": [
+            "\\mathbf{$1}$0"
+        ],
+        "description": "math boldface"
+    },
+    "math blackboard": {
+        "prefix": ["\\mathbb", "mathbb", "bb"],
+        "body": [
+            "\\mathbb{$1}$0"
+        ],
+        "description": "math blackboard"
+    },
+    "math roman": {
+        "prefix": ["\\mathrm", "mathrm", "rm"],
+        "body": [
+            "\\mathrm{$1}$0"
+        ],
+        "description": "math roman"
+    },
+    "math sans-serif": {
+        "prefix": ["\\mathsf", "mathsf", "sf"],
+        "body": [
+            "\\mathsf{$1}$0"
+        ],
+        "description": "math sans serif"
+    },
+    "math typewriter": {
+        "prefix": ["\\mathtt", "mathtt", "tt"],
+        "body": [
+            "\\mathtt{$1}$0"
+        ],
+        "description": "math typewriter"
+    },
+    "math calligraphy": {
+        "prefix": ["\\mathcal", "mathcal", "cal"],
+        "body": [
+            "\\mathcal{$1}$0"
+        ],
+        "description": "math calligraphy"
+    },
+
+    # math (e.g. operators)
+    "math sum": {
+        "prefix": ["\\sum", "sum"],
+        "body": [
+            "\\sum_{${1:i=1}}^${2:n} $0"
+        ],
+        "description": "math sum"
+    },
+    "math product": {
+        "prefix": ["\\prod", "prod"],
+        "body": [
+            "\\prod_{${1:i=1}}^${2:n} $0"
+        ],
+        "description": "math product"
+    },
+    "math integral": {
+        "prefix": ["\\int", "int"],
+        "body": [
+            "\\int_{${1:a}}^${2:b} $0"
+        ],
+        "description": "math integral"
+    },
+    "math limit": {
+        "prefix": ["\\lim", "lim"],
+        "body": [
+            "\\lim_{${1:x \\to 0}} $0"
+        ],
+        "description": "math limit"
+    },
+    "math partial derivative": {
+        "prefix": ["\\partial", "partial"],
+        "body": [
+            "\\partial $0"
+        ],
+        "description": "math partial derivative"
+    },
+    "fraction": {
+        "prefix": ["\\frac", "frac", "fraction"],
+        "body": [
+            "\\frac{$1}{$2}$0"
+        ],
+        "description": "fraction"
+    }
+}

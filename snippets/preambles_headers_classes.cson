@@ -1,0 +1,64 @@
+{
+    # preamble, headers, classes
+    "Require Package": {
+        "prefix": ["\\RequirePackage", "RequirePackage", "Pkg"],
+        "body": [
+            "\\RequirePackage$2{${1:package name}}$0"
+        ],
+        "description": "Require Package"
+    },
+    "Use Package": {
+        "prefix": ["\\usepackage", "usepackage", "pkg"],
+        "body": [
+            "\\usepackage$2{${1:package name}}$0"
+        ],
+        "description": "Use Package"
+    },
+    "Load Class": {
+        "prefix": ["\\LoadClass", "LoadClass"],
+        "body": [
+            "\\LoadClass[",
+            "\t$2",
+            "]{${1:class name}}$0"
+        ],
+        "description": "Load Class"
+    },
+    "Document Class": {
+        "prefix": ["\\documentclass", "documentclass"],
+        "body": [
+            "\\documentclass[",
+            "\t$2",
+            "]{${1:class name}}$0"
+        ],
+        "description": "Document Class"
+    },
+    "Input": {
+        "prefix": ["\\input", "input"],
+        "body": [
+            "\\input{${1:file name}}$0"
+        ],
+        "description": "Input"
+    },
+
+    "New Command": {
+        "prefix": ["\\newcommand", "newcommand"],
+        "body": [
+            "\\newcommand{\\\\${1:command name}}$2{$3}$0"
+        ],
+        "description": "New Command"
+    },
+    "Renew Command": {
+        "prefix": ["\\renewcommand", "renewcommand"],
+        "body": [
+            "\\renewcommand{\\\\${1:command name}}$2{$3}$0"
+        ],
+        "description": "Renew Command"
+    },
+    "New Document Command": {
+        "prefix": ["\\NewDocumentCommand", "NewDocumentCommand"],
+        "body": [
+            "\\NewDocumentCommand\\\\${1:command name}{${2:<argument types>}}{$3}$0"
+        ],
+        "description": "New Document Command"
+    }
+}

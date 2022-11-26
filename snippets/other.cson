@@ -1,0 +1,146 @@
+{
+    # LaTeX Beamer
+    "Frame": {
+        "prefix": "frame",
+        "body": [
+            "\\begin{frame}{${2:title}}",
+            "\t$0",
+            "\\end{frame}"
+        ],
+        "description": "Frame"
+    },
+    "Columns": {
+        "prefix": "columns",
+        "body": [
+            "\\begin{columns}",
+            "\t\\begin{column}[T]{${1:0.5\\textwidth}}",
+            "\t\t$0",
+            "\t\\end{column}",
+            "\t\\begin{column}[T]{${2:0.5\\textwidth}}",
+            "\t\t",
+            "\t\\end{column}",
+            "\\end{columns}"
+        ],
+        "description": "Columns"
+    },
+
+    # other
+    "Label": {
+        "prefix": ["\\label", "label"],
+        "body": [
+            "\\label{${1:<label>}}"
+        ],
+        "description": "Label"
+    },
+    "Cite": {
+        "prefix": ["\\cite", "cite"],
+        "body": [
+            "~\\cite{${1:<label>}}$0"
+        ],
+        "description": "Cite"
+    },
+    "\\item": {
+        "prefix": ["\\item", "item"],
+        "body": [
+            "\\item ${0:item}"
+        ],
+        "description": "item"
+    },
+    "\\item[description]": {
+        "prefix": ["\\itd", "itd"],
+        "body": [
+            "\\item[${1:description}] ${0:item}"
+        ],
+        "description": "item with description"
+    },
+    "Autoref": {
+        "prefix": ["\\autoref", "autoref"],
+        "body": [
+            "\\autoref{${1:<label>}}$0"
+        ],
+        "description": "Autoref"
+    },
+    "Eqref": {
+        "prefix": ["\\eqref", "eqref"],
+        "body": [
+            "~\\eqref{${1:<label>}}$0"
+        ],
+        "description": "Eqref"
+    },
+    "Ref": {
+        "prefix": ["\\ref", "ref"],
+        "body": [
+            "~\\ref{${1:<label>}}$0"
+        ],
+        "description": "Ref"
+    },
+    "Define Color": {
+        "prefix": ["\\xdefinecolor", "xdefinecolor"],
+        "body": [
+            "\\xdefinecolor{${1:<color>}}{${2:<model>}}{${3:<value>}}$0"
+        ],
+        "description": "Define Color"
+    },
+    "Color Let": {
+        "prefix": ["\\colorlet", "colorlet"],
+        "body": [
+            "\\colorlet{${1:<color>}}{${2:<color>}}$0"
+        ],
+        "description": "Color Let"
+    },
+
+    # glossaries
+    "New Acronym": {
+        "prefix": ["\\newacronym", "newacronym"],
+        "body": [
+            "\\newacronym{${1:<acronym>}}{${2:<short>}}{${3:<long>}}"
+        ],
+        "description": "New acronym"
+    },
+    "New Glossary Entry": {
+        "prefix": ["\\newglossaryentry", "newglossaryentry"],
+        "body": [
+            "\\newglossaryentry{${1:<label>}}{",
+            "\tname={${2:<name>}},",
+            "\tdescription={${3:<description>}}",
+            "}"
+        ],
+        "description": "New glossary entry"
+    },
+    "Glossary Entry": {
+        "prefix": ["\\gls", "gls"],
+        "body": [
+            "\\gls{${1:<label>}}$0"
+        ],
+        "description": "Glossary"
+    },
+    "Glossary Entry (plural)": {
+        "prefix": ["\\glspl", "glspl"],
+        "body": [
+            "\\glspl{${1:<label>}}$0"
+        ],
+        "description": "Glossary plural"
+    },
+    "Glossary with Description": {
+        "prefix": ["\\glsdesc", "glsdesc"],
+        "body": [
+            "\\glsdesc$2{${1:<label>}}$0"
+        ],
+        "description": "Glossary with description"
+    },
+    "Make Glossaries": {
+        "prefix": ["\\makeglossaries", "makeglossaries"],
+        "body": [
+            "\\makeglossaries"
+        ],
+        "description": "Make glossaries"
+    },
+    "Print Glossaries": {
+        "prefix": ["\\printglossaries", "printglossaries"],
+        "body": [
+            "\\printglossaries"
+        ],
+        "description": "Print glossaries"
+    },
+
+}
